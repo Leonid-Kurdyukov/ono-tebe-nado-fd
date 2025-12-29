@@ -99,40 +99,40 @@
   display: block;
 }
 
-.aligned-text__first {
+.aligned-text__start-left {
   letter-spacing: 7px;
 }
 
-.aligned-text__second {
+.aligned-text__start-right {
   letter-spacing: 28px;
 }
 
-.aligned-text_center {
+.aligned-text__center {
   display: block;
   padding-left: 330px;
   padding-top: 10px;
 }
 
-.aligned-text_center__first {
+.aligned-text__center-left {
   letter-spacing: 30px;
 }
 
-.aligned-text_center__second {
+.aligned-text__center-right {
   letter-spacing: 30px;
   margin-left: -23px;
 }
 
-.aligned-text_right {
+.aligned-text__end {
   display: block;
   text-align: end;
   padding-top: 8px;
 }
 
-.aligned-text_right__first {
+.aligned-text__end-left {
   padding-right: 5px;
 }
 
-.aligned-text_right__second {
+.aligned-text__end-medium {
   letter-spacing: 32px;
   margin-right: -27px;
 }
@@ -190,6 +190,7 @@
   justify-content: center;
   list-style: none;
   margin: 28px 0;
+  flex-wrap: nowrap;
 }
 
 .card-link {
@@ -258,9 +259,8 @@
   justify-content: center;
   align-items: center;
   border-radius:50%;
-  position: relative;
-  top: -28px;  
-  right: -10px;   
+  margin-top: -27px;
+  margin-left: 21px;
 }
 
 .about__logo-image {
@@ -289,7 +289,9 @@
 .about__text {
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.01px;
+  max-width: 693px;
+  max-height: 312px;
+  white-space: pre-line;
 }
 
 .footer {
